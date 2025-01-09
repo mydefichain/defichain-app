@@ -46,7 +46,7 @@ jobs:
       - name: Fetch Release Asset
         uses: Legion2/download-release-action@68df3d242858e28a7e6d8b9838a3e6730cdfc422
         with:
-          repository: 'DeFiCh/app'
+          repository: 'mydefichain/defichain-app'
           tag: 'v${{ env.PACKAGE_VERSION}}'
           file: 'DeFi-Wallet-${{ env.PACKAGE_VERSION}}.AppImage'
 
@@ -122,7 +122,7 @@ jobs:
   #     - name: Fetch Release Asset
   #       uses: Legion2/download-release-action@68df3d242858e28a7e6d8b9838a3e6730cdfc422
   #       with:
-  #         repository: 'DeFiCh/app'
+  #         repository: 'mydefichain/defichain-app'
   #         tag: 'v${{ env.PACKAGE_VERSION}}'
   #         file: 'DeFi-Wallet-${{ env.PACKAGE_VERSION}}.dmg'
 
@@ -182,7 +182,7 @@ jobs:
       - name: Fetch Release Asset
         uses: Legion2/download-release-action@68df3d242858e28a7e6d8b9838a3e6730cdfc422
         with:
-          repository: 'DeFiCh/app'
+          repository: 'mydefichain/defichain-app'
           tag: 'v${{ env.PACKAGE_VERSION}}'
           file: 'DeFi-Wallet-Setup-${{ env.PACKAGE_VERSION}}.exe'
 
