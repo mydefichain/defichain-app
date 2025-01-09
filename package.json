@@ -4,11 +4,11 @@
   "description": "DeFi Wallet",
   "main": "./electron-app/build/electron-app/index.js",
   "author": {
-    "name": "DeFiChain Foundation",
-    "email": "engineering@defichain.com",
-    "url": "https://defichain.com/"
+    "name": "DeFiChain",
+    "email": "info@mydefichain.com",
+    "url": "https://mydefichain.com/"
   },
-  "homepage": "https://github.com/DeFiCh/app",
+  "homepage": "https://github.com/mydefichain/defichain-app",
   "publicPath": "./",
   "config": {
     "ainVersion": "4.2.5"
@@ -114,7 +114,7 @@
   "build": {
     "productName": "DeFi Wallet",
     "appId": "com.defichain.DeFiWallet",
-    "copyright": "Copyright © 2020-2023 ${author}",
+    "copyright": "Copyright © 2020-2025 ${author}",
     "asar": true,
     "afterSign": "electron-app/assets/notarize.js",
     "files": [
@@ -183,8 +183,8 @@
     },
     "publish": {
       "provider": "github",
-      "repo": "app",
-      "owner": "DeFiCh",
+      "repo": "defichain-app",
+      "owner": "mydefichain",
       "releaseType": "prerelease"
     }
   },
