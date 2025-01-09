@@ -9,10 +9,7 @@ on:
 jobs:
   publish_linux_version:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-      repository-projects: write
+    permissions: write-all
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
 
@@ -35,10 +32,7 @@ jobs:
     needs:
       - publish_linux_version
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-      repository-projects: write
+    permissions: write-all
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
 
@@ -151,10 +145,7 @@ jobs:
 
   publish_windows_version:
     runs-on: windows-latest
-    permissions:
-      contents: write
-      pull-requests: write
-      repository-projects: write
+    permissions: write-all
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
 
@@ -177,10 +168,7 @@ jobs:
     needs:
       - publish_windows_version
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-      repository-projects: write
+    permissions: write-all
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
 
