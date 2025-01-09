@@ -24,7 +24,7 @@ jobs:
         run: npm run pre:build:linux
 
       - name: Publish app
-        run: npm run publish
+        run: npm cache clean --force && npm run publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -89,7 +89,7 @@ jobs:
   #       run: npm run pre:build:mac
 
   #     - name: Publish app
-  #       run: npm run publish
+  #       run: npm cache clean --force && npm run publish
   #       env:
   #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   #         CSC_LINK: ${{ secrets.CSC_LINK}}
@@ -160,7 +160,7 @@ jobs:
         run: npm run pre:build:win
 
       - name: Publish app
-        run: npm run publish
+        run: npm cache clean --force && npm run publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
