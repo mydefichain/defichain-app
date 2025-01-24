@@ -1,6 +1,6 @@
 {
   "name": "defi-wallet",
-  "version": "4.2.5a",
+  "version": "4.2.6",
   "description": "DeFi Wallet",
   "main": "./electron-app/build/electron-app/index.js",
   "author": {
